@@ -20,7 +20,7 @@ env:
   IMAGE_URI: ${{ fromJSON(vars.ALLER_VAR || '{}').AWS_ACCOUNT_ID || vars.AWS_ACCOUNT_ID }}.dkr.ecr.${{ fromJSON(vars.ALLER_VAR || '{}').AWS_REGION || vars.AWS_REGION }}.amazonaws.com/${{ fromJSON(vars.ALLER_VAR || '{}').ECR_FRONTEND_REPO || vars.ECR_FRONTEND_REPO }}
 
   # ✅ 프론트 API 베이스 (레포 Variables에 FRONTEND_VITE_API_BASE가 있으면 우선 사용)
-  FRONTEND_VITE_API_BASE: ${{ vars.FRONTEND_VITE_API_BASE || 'http://52.79.87.206:8000' }}
+  FRONTEND_VITE_API_BASE: ${{ vars.FRONTEND_VITE_API_BASE || 'http://43.200.212.139:8000' }}
 
 jobs:
   build-and-push:
