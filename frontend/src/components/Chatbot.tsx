@@ -1,4 +1,4 @@
-// frontend/src/components/Chatbot.tsx
+// frontend/src/components/Chatbot.tsx 이거야
 'use client';
 
 import { API_BASE } from '@/lib/env';
